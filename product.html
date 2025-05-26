@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dot Glasses</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"> 
+      <span class="dot">DOT</span> <span class="glasses">GLASSES</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="solution.html">Solution </a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="where-we-work.html">Where We Work </a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <button><span>🔍</span></button>
+    </div>
+  </header>
+  <section class="solution-section">
+    <div class="solution-wrapper">
+      <div class="solution-card">
+        <h1>Our Products</h1>
+        <p>
+          Explore our range of vision care tools designed to be effective, affordable, and scalable.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="https://www.dotglasses.org/wp-content/uploads/2020/10/testers-small.jpg" alt="Vision Tester" />
+          <h3>Vision Testers</h3>
+          <p>Simple, self-guided tools for testing reading and distance vision.</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="https://www.dotglasses.org/wp-content/uploads/2020/10/measurment-small.png" alt="Pupil Tool" />
+          <h3>Pupil Distance Tool</h3>
+          <p>Quick and easy tool to measure pupillary distance accurately.</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="https://www.dotglasses.org/wp-content/uploads/2020/10/reading-small.jpg" alt="Vision Kit in use" />
+          <h3>Complete Vision Kit</h3>
+          <p>Everything needed to test, measure, and provide proper eyewear.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="include-footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('include-footer').innerHTML = data);
+  </script>
+</body>
+</html>
